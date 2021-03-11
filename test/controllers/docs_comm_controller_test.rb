@@ -2,7 +2,12 @@ require 'test_helper'
 
 class DocsCommControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get docs_comm_home_url
+    get root_path
+    assert_response :success
+  end
+  
+  test "should get new" do
+    get signup_path
     assert_response :success
   end
 
