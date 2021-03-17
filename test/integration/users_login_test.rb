@@ -5,8 +5,17 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
 def setup
     @user = users(:michael)
 end
-    
-  test "login with invalid information" do
+
+ test "redirect to user_page if logged_in" do #独自
+   get root_path
+   if is_logged_in?
+       assert_template 'docs_comm/users'
+   else
+       assert_template 'docs_comm/home'
+   end
+ end
+     
+ test "login with invalid information" do
    get root_path
    assert_template 'docs_comm/home'
    post root_path,params:{ session:{ email:"", password:""}}
@@ -23,7 +32,7 @@ end
     assert_redirected_to @user
     follow_redirect!
     assert_template 'users/show'
-    assert_select "a[href=?]",root_path,count:0
+    assert_select "a[href=?]",root_path,count:0 #Red
     assert_select "a[href=?]",logout_path
     assert_select "a[href=?]",user_path(@user)
   end
@@ -49,7 +58,7 @@ end
     assert_redirected_to @user
     follow_redirect!
     assert_template 'users/show'
-    assert_select "a[href=?]", root_path, count: 0
+    assert_select "a[href=?]", root_path, count: 0 #Red
     assert_select "a[href=?]", logout_path
     assert_select "a[href=?]", user_path(@user)
     delete logout_path
