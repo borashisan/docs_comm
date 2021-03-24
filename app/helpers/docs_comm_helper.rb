@@ -26,7 +26,7 @@ module DocsCommHelper
     if user && user.authenticated?(:remember, cookies[:remember_token])
     log_in user
     @current_user = user
-   end
+    end
   end
  end
 #現在ログイン中のユーザーを返す（いる場合）
@@ -45,6 +45,13 @@ module DocsCommHelper
   session.delete(:user_id)
   @current_user = nil
  end
+ #パスワード再設定にアクセスしたらtureを返す
+ def resets?
+  current_page?(new_password_reset_path)
+ end
+  
+  
+ 
  
  #永続的セッションを破棄する
  def forget(user)

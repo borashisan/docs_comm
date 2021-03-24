@@ -17,6 +17,8 @@
     
   <% if logged_in? %>   
     <%= render 'layouts/header' %>
+  <% elsif resets? %> 
+    <%= render 'layouts/header' %>
   <% end %>  
      
     

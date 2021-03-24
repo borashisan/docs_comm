@@ -1,0 +1,26 @@
+<% provide(:title, "パスワード再設定") %>
+   <div class="container">
+    <div class="center jumbotron">
+     <h1 id = "reset">パスワード再設定</h1>
+     <br>
+    
+     <div class="row">
+       <div class="col-md-6 col-md-offset-3">
+         <%= form_for(:password_reset, url: password_resets_path) do |f| %>
+           <%= f.label "メールアドレス" %>
+           <%= f.email_field :email, class: 'form-control' %>
+    
+           <%= f.submit "送信", class: "btn btn-primary" %>
+         <% end %>
+       </div>
+     </div>
+     <br>
+     <hr id="else">
+     <%= link_to "新しいアカウントを作成", signup_path %>
+     <br>
+     <br>
+     <br>
+     <hr>
+     <%= link_to "ログインに戻る", root_path %>
+    </div> 
+   </div>
