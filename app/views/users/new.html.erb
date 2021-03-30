@@ -10,17 +10,13 @@
       <%= form_for(@user) do |f| %>
        <%= render 'shared/error_messages' %>
 
-       <%= f.label "お名前" %>
-       <%= f.text_field :name, class: 'form-control' %>
+       <%= f.text_field :name,:placeholder => "お名前", class: 'form-control' %>
  
-       <%= f.label "メールアドレス" %>
-       <%= f.email_field :email, class: 'form-control' %>
+       <%= f.email_field :email,:placeholder => "メールアドレス", class: 'form-control' %>
 
-       <%= f.label "パスワード" %>
-       <%= f.password_field :password, class: 'form-control' %>
+       <%= f.password_field :password,:placeholder => "パスワード", class: 'form-control' %>
 
-       <%= f.label "パスワード確認" %>
-       <%= f.password_field :password_confirmation, class: 'form-control' %>
+       <%= f.password_field :password_confirmation,:placeholder => "パスワード確認", class: 'form-control' %>
      <br>
      <div id = "signup">
        <%= f.submit "登録する", class: "btn btn-primary" %>

@@ -45,9 +45,22 @@ module DocsCommHelper
   session.delete(:user_id)
   @current_user = nil
  end
- #パスワード再設定にアクセスしたらtureを返す
+ #パスワード再設定にアクセスしたらtureを返す　#独自
  def resets?
-  current_page?(new_password_reset_path)
+   if controller_path == 'password_resets'
+   true
+   end
+ end
+ 
+ #ヘッダーがいらないページ
+ def non_header?
+  if controller_path == 'docs_comm'
+   true
+  elsif controller_path == 'users' && action_name == 'new'
+   true
+  elsif controller_path == 'users' && action_name == 'create'
+   true
+  end
  end
   
   

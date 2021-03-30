@@ -5,6 +5,9 @@
 
 body {
   padding-top: 60px;
+  font-family: "ヒラギノ角ゴシック", "メイリオ";
+  background-color: #f5f5f5;
+
 }
 
 .container {
@@ -15,6 +18,9 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid ;
+  border-color:#d3d3d3 ;
 }
 
 .jumbotron p {
@@ -37,6 +43,11 @@ textarea {
 
 .center h1 {
   margin-bottom: 10px;
+}
+
+
+hr {
+  border-top: 1px solid #ccc;
 }
 
 /* typography */
@@ -78,11 +89,11 @@ p {
 
 #logo {
   float: center;
-  
+  font-family: "Futura","Arial";
   font-size: 50px;
   color: 000;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
@@ -93,23 +104,50 @@ p {
 
 /* header */
 
+header {
+  line-height: 0;
+}
+
+
+
+
 #header-logo {
   float: left;
+  font-family: "Futura","Arial";
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 24px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: 000000;
     text-decoration: none;
   }
 }
 
-header{
-  
+.dropdown-menu > li > a {
+    padding: 2px 20px;
+    line-height: 2;
+  }
+
+
+
+
+
+.navbar-inverse {
+    background-color: #fff;
+    border-color:  #d3d3d3
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #000000;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #d3d3d3;
+    background-color: transparent;
 }
 
 /* footer */
@@ -184,6 +222,12 @@ aside {
 
 /* forms */
 
+.btn-primary {
+    color: #fff;
+    background-color: #0095f6;
+    border-color: #0095f6;
+}
+
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
@@ -238,16 +282,18 @@ input {
 
 
 /* password reset */
+
+  
 #else {
   border-top: 1px solid #ccc;
   height: 1em;
   text-align: center;
   overflow: visible;
 }
-hr::after {
+#else::after {
   content: "または";
   font-weight:  bold;
-  background: #eee;
+  background: #fff;
   color: #555;
   display: inline-block;
   height: 2em;
@@ -257,6 +303,12 @@ hr::after {
   padding: 0 1em;
 }
 
+/* pagenation */
+.pagination > li > a,  {
+    color: #0095f6;
+}
 
-
-
+.pagination > .active > a,  {
+    background-color: #0095f6;
+    border-color: #0095f6;
+}
