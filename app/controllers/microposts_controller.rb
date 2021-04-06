@@ -6,7 +6,7 @@ class MicropostsController < ApplicationController
         flash[:success] = "フォームが投稿されました"
         redirect_to root_url
      else
-        render 'users/show' #どこをレンダリングさせるべきかわかっていない
+        render 'docs_comm/home' #どこをレンダリングさせるべきかわかっていない
      end
     end
     

@@ -54,7 +54,7 @@ module DocsCommHelper
  
  #ヘッダーがいらないページ
  def non_header?
-  if controller_path == 'docs_comm'
+  if controller_path == 'docs_comm' && current_user.nil?
    true
   elsif controller_path == 'users' && action_name == 'new'
    true
