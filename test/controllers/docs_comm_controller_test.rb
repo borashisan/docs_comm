@@ -11,5 +11,8 @@ class DocsCommControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
   
+  #test "should redirect to home after reload in flash "
+  #end
+  
 
 end

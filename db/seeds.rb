@@ -6,7 +6,6 @@ User.create!(name:  "Example User",
              activated:true,
              activated_at: Time.zone.now)
              
-
 99.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
@@ -22,3 +21,4 @@ users = User.order(:created_at).take(6)
   content = "https://docs.google.com/forms/d/e/1FAIpQLScXnLRWaSvlwJyPq8XG2ZTFSxFBc_FPeleYfOjErCUeTWG1WQ/viewform?usp=sf_link"
   users.each { |user| user.microposts.create!(content: content) }
 end
+

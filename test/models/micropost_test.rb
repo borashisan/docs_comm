@@ -24,15 +24,15 @@ class MicropostTest < ActiveSupport::TestCase
     
   end
   
-  test "content should be 111 characters" do #google formsのurlの文字数
+  #test "content should be 111 characters" do #google formsのurlの文字数
     #マクロポストが111文字ちょうどかをテストする
-    @micropost.content = "a" * 112
+    #@micropost.content = "a" * 112
     #マイクロポストが112文字
-    assert_not @micropost.valid?
+   # assert_not @micropost.valid?
     #trueならredを返す
-    @micropost.content = "a" * 110
-    assert_not @micropost.valid?
-  end
+    #@micropost.content = "a" * 110
+   # assert_not @micropost.valid?
+  #end
   
   test "order should be most recent first" do
     assert_equal microposts(:most_recent), Micropost.first
