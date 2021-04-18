@@ -3,5 +3,11 @@
   <div class="field">
     <%= f.text_area :content, placeholder: "https://docs.google.com/forms/d/e/1FAIpQLS..." %>
   </div>
-  <%= f.submit "投稿", class: "btn btn-primary" %>
+  <div class = "icon-submit">
+  <%= f.button :type => "submit", class: "btn btn-primary" do %>
+  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+  <% end %>
+  </div>
 <% end %>
+
+ 

@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 /* universal */
 
@@ -115,17 +116,19 @@ header {
   float: left;
   font-family: "Futura","Arial";
   margin-right: 10px;
-  font-size: 1.7em;
+  font-size: 2em;
   color: #000000;
   text-transform: uppercase;
+  text-align : center ;
   letter-spacing: -1px;
-  padding-top: 24px;
+  padding-top: 28px;
   font-weight: bold;
   &:hover {
     color: 000000;
     text-decoration: none;
   }
 }
+
 
 .dropdown-menu > li > a {
     padding: 2px 20px;
@@ -222,8 +225,14 @@ aside {
 
 /* forms */
 
+.icon-submit{
+  text-align : left ;
+  border-radius : 30%;   
+}
+
 .btn-primary {
     color: #fff;
+    font-size     : 15pt;
     background-color: #0095f6;
     border-color: #0095f6;
 }
@@ -314,6 +323,9 @@ input {
 }
 
 /* microposts */
+
+
+
 
 
 .microposts {
