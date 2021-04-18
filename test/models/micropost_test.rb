@@ -24,15 +24,22 @@ class MicropostTest < ActiveSupport::TestCase
     
   end
   
-  #test "content should be 111 characters" do #google formsのurlの文字数
-    #マクロポストが111文字ちょうどかをテストする
-    #@micropost.content = "a" * 112
-    #マイクロポストが112文字
-   # assert_not @micropost.valid?
-    #trueならredを返す
-    #@micropost.content = "a" * 110
-   # assert_not @micropost.valid?
-  #end
+  test "content should not be too long" do #google formsのurlの文字数
+    #マクロポストが140文字以下かをテストする
+    @micropost.content = "a" * 141
+    assert_not @micropost.valid?
+    @micropost.content = "a" * 89
+    assert_not @micropost.valid?
+  end
+  
+  test "micropost validation should accept valid URL" do
+    valid_URL = %w[https://forms.office.com/Pages/ResponsePage.aspx?id=KRd49ELnOEO-pvU_PiOEJ9tyuNlmOthNlJ69zJHwC7JUNTJJNUhUUjlVQkpJSTNUQjk3TlE3RDRCRS4u 
+                   https://docs.google.com/forms/d/e/1FAIpQLSc4JLl-CpdrmP5DlFjOrtLUJI5CyeU1XWVgbNOJr6NBs0JrWg/viewform]
+    valid_URL.each do |valid_URL|
+      @micropost.content = valid_URL
+      assert @micropost.valid?, "#{valid_URL.inspect} should be valid"
+    end
+  end
   
   test "order should be most recent first" do
     assert_equal microposts(:most_recent), Micropost.first
