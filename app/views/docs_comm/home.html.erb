@@ -36,9 +36,16 @@
       
 　　<div id = "login">
       <%= f.submit "ログイン", class:  "btn btn-primary" %>
+      <hr>
+      <%= form_for(:session, url: '/') do |f| %>
+        <%= f.hidden_field :email, value: "Test@gmail.com" %>
+        <%= f.hidden_field :password, value: "testuser" %>
+        <%= f.submit 'テストログイン', class:  "btn btn-primary" %>
+      <% end %>
     </div>  
-    <br>
     
+    
+
     <hr>
     
     
