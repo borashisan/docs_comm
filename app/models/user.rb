@@ -1,6 +1,7 @@
 class User < ApplicationRecord
  has_many :microposts, dependent: :destroy
  attr_accessor :remember_token,:activation_token,:reset_token
+ mount_uploader :image, ImageUploader
  before_save :downcase_email
  before_create :create_activation_digest
   before_save { self.email = email.downcase }
