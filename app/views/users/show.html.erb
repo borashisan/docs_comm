@@ -3,13 +3,16 @@
   <aside class="col-md-8">
     <section class="user_info"> 
       <h1>
-       <%= gravatar_for @user %>
+      <% if @user.image? %>
+       <%= image_tag @user.image.url, :size =>'150x150' %>
+      <% else %>
+       <%= image_tag("/images/icon/no-image.png") %>
+      <% end %>
        <%= @user.name %>
       </h1>
       <span class="introduction">
         <br>
         <%= @user.introduction %>
-      
       </span>
     </section>
   </aside>

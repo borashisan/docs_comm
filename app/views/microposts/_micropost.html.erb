@@ -1,5 +1,13 @@
 <li id="micropost-<%= micropost.id %>">
-  <%= link_to gravatar_for(micropost.user, size: 50), micropost.user %>
+  <% if controller_path == 'users' %>
+   <% if @user.image? %>
+    <%= image_tag @user.image.url, :size =>'50x50' %>
+   <% else %>
+    <%= image_tag("/images/icon/no-image.png") %>
+   <% end %>
+  <% elsif controller_path == 'docs_comm' %>
+    <%= image_tag @micropost.user.image.url, :size =>'50x50' %>
+  <% end %>
   <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
   <span class="content"><iframe id="forms" width="500" height="490" frameborder="no" src=<%= micropost.content %>></iframe></span>
   <span class="timestamp">

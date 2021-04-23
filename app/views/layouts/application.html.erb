@@ -12,7 +12,7 @@
   <body>
     
     <% unless non_header? %>
-    <%= debug(params) if Rails.env.development? %>
+    
     <% end %>
     
     <% flash.each do |message_type, message|%>
