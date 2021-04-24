@@ -3,7 +3,7 @@
   <% if micropost.user.image? %>
     <%= image_tag micropost.user.image.url, :size =>'50x50' %>
   <% else %>
-    <%= image_tag("/images/icon/no-image.png") %>
+    <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
   <% end %>
      
   
