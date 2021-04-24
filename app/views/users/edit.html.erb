@@ -6,7 +6,6 @@
       <div class="col-md-6 col-md-offset-3">
         <%= form_for(@user) do |f| %>
           <%= render 'shared/error_messages', object: f.object %>
-    　　　　<%= link_to '削除', image, method: :delete %>
 　　　　　<div>    
 　　　　　<% if @user.image? %>
            <%= image_tag @user.image.url %>
