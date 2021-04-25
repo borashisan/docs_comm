@@ -1,4 +1,4 @@
-User.create!(name:  "Tomoya Nakabayasi",
+User.create!(name:  "Tomoya Nakabayashi",
              email: "tomochuro731@gmail.com",
              password:              "nakaba8739",
              password_confirmation: "nakaba8739",
