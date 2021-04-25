@@ -30,6 +30,6 @@ Remember Me機能
 プロフィール画像投稿機能
 プロフィールbio投稿機能
 
-##インフラ
+## インフラ
 Heroku
-AWS s3
+AWS S3
