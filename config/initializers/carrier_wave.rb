@@ -2,8 +2,7 @@ require 'carrierwave/storage/abstract'
 require 'carrierwave/storage/file'
 require 'carrierwave/storage/fog'
 
-if Rails.env.production?
-  CarrierWave.configure do |config|
+CarrierWave.configure do |config|
     config.storage :fog
     config.fog_provider = 'fog/aws'
     config.fog_directory  = 'docs-comm' # 作成したバケット名を記述
@@ -17,5 +16,5 @@ if Rails.env.production?
     }
     
     
-  end
+
 end
