@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
  root 'docs_comm#home'
- post '/create', to: 'docs_comm#create'
+ post '/log_in', to: 'docs_comm#create'
  delete '/logout', to: 'docs_comm#destroy'
  
  get  '/signup',  to: 'users#new'
