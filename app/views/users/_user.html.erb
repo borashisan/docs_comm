@@ -1,10 +1,12 @@
 <li>
+ <%= link_to user do %>
   <% if user.image? %>
     <%= image_tag user.image.url, :size =>'50x50' %>
   <% else %>
     <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
   <% end %>
-  <%= link_to user.name, user %>
+  <%= user.name %>
+ <% end %>
   <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to user, method: :delete,
                                   data: { confirm: "このユーザーを削除してもよろしいですか" } do %>
