@@ -27,7 +27,7 @@ end
 
 users = User.order(:created_at).take(6)
 50.times do
-  content = "https://docs.google.com/forms/d/e/1FAIpQLScXnLRWaSvlwJyPq8XG2ZTFSxFBc_FPeleYfOjErCUeTWG1WQ/viewform?usp=sf_link"
+  content = "https://docs.google.com/forms/d/e/1FAIpQLSe2olFhlP-KxqH66GZAja28FVuR5lwTb7Do5_iIDndd69vmPw/viewform?usp=sf_link"
   users.each { |user| user.microposts.create!(content: content) }
 end
 
