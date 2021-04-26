@@ -4,7 +4,7 @@ DOCS_COMM(仮)とはGoogle Formsのアンケートを不特定多数の人間に
 テストログインからお入りください。
 
 google forms URLサンプル
-https://docs.google.com/forms/d/e/1FAIpQLSe2olFhlP-KxqH66GZAja28FVuR5lwTb7Do5_iIDndd69vmPw/viewform?usp=sf_link
+"https://docs.google.com/forms/d/e/1FAIpQLSe2olFhlP-KxqH66GZAja28FVuR5lwTb7Do5_iIDndd69vmPw/viewform?usp=sf_link"
 
 
 ## 使用技術
