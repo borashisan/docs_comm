@@ -2,22 +2,14 @@
  <div class="row">
   <aside class="col-md-8">
     <section class="user_info">
-     
      <%= link_to  "https://twitter.com/share?url=#{request.url}", class: "SNS",
                                 title: 'Twitter', target: '_blank' do %>
         <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
      <% end %> 
-     
-     <script language="JavaScript">
-      function line_button_tag(){
-       var tag= "<div class='line-it-button' data-lang='ja' data-type='share-a' data-ver='2' data-url='{0}' style='display: none;'></div>";
-       tag = tag.replace(/\{0\}/g, location.href);
-       return tag;
-      }
-     </script>
-     <script language="JavaScript">document.write(line_button_tag());</script>
-
-     <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+     <%= link_to  "https://line.me/R/msg/text/?#{request.url}", class: "SNS",
+                                title: 'Line', target: '_blank' do %>
+　　 Line
+     <% end %> 
      
       <h1>
       <% if @user.image? %>
