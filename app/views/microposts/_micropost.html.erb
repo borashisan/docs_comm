@@ -1,17 +1,26 @@
 <li id="micropost-<%= micropost.id %>">
- <%= link_to micropost.user do %> 
-  <% if micropost.user.image? %>
+ <% if controller_path == 'microposts' %>
+  <%= link_to micropost.user do %> 
+   <% if micropost.user.image? %>
     <%= image_tag micropost.user.image.url, :size =>'50x50' %>
-  <% else %>
+   <% else %>
     <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
-  <% end %>
+   <% end %>
   <span class="user"><%= micropost.user.name %></span>
+  <% end %>
+ <% else %>
+  <%= link_to micropost do %> 
+   <% if micropost.user.image? %>
+    <%= image_tag micropost.user.image.url, :size =>'50x50' %>
+   <% else %>
+    <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+   <% end %>
+  <span class="user"><%= micropost.user.name %></span>
+  <% end %>
  <% end %>
   <span class="content"><iframe id="forms" width="500" height="490" frameborder="no" src=<%= micropost.content %>></iframe></span>
   <span class="timestamp">
-    <% unless controller_path == 'microposts' %>
-     <%= link_to micropost do %><p><%= micropost.content %></p><% end %>
-    <% end %> 
+    
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.
     <% if current_user?(micropost.user) %>
       <%= link_to micropost, method: :delete,

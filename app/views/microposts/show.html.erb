@@ -30,6 +30,8 @@
     <p><%= link_to '削除',micropost_comment_path(@micropost,comment),
                           method: :delete,data: {confirm: '削除してもよろしいですか？'} %></p>
 <% end %>
+<%= link_to 'Twitter', "https://twitter.com/share?url=#{request.url}", 
+                                title: 'Twitter', target: '_blank' %>
 </div>
 
  
