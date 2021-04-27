@@ -1,37 +1,57 @@
  <div class="container"> 
    <ol class="microposts">
+     <%= link_to  "https://twitter.com/share?url=#{request.url}", class: "SNS",
+                                title: 'Twitter', target: '_blank' do %>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+     <% end %>  
+     <script language="JavaScript">
+      function line_button_tag(){
+       var tag= "<div class='line-it-button' data-lang='ja' data-type='share-a' data-ver='2' data-url='{0}' style='display: none;'></div>";
+       tag = tag.replace(/\{0\}/g, location.href);
+       return tag;
+      }
+     </script>
+     <script language="JavaScript">document.write(line_button_tag());</script>
+
+     <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>  
+     
      <%= render @micropost %>
    </ol>
-
-    <h2>コメントを入力</h2>
-<!--引数の順番は親、子-->
-<%= form_for ([@micropost,@comment]) do |f| %>
-    <%= render 'shared/error_messages',object: f.object %>
-    <p>
-        <%= f.label :title %><br/>
-        <%= f.text_field :title %><br/>
-    </p>
-    <p>
-        <%= f.label :content %><br/>
-        <%= f.text_area :content %><br/>
-    </p>
-    <p>
-       <%= f.submit "送信" %>
-    </p>
-<% end %>
-<h2>コメント一覧</h2>
+   <h2>コメント</h2>
+    <hr>
+<% if !@micropost.comments.any? %>
+    <h2>コメントはありません</h2>
+<% end %>    
 <!--@article.commentsで該当する記事のコメント一覧を取得-->
-<% @micropost.comments.each do |comment| %>
+ <% @micropost.comments.each do |comment| %>
     <p>タイトル</p>
     <p><%= comment.title %></p>
     <p>内容</p>
     <p><%= comment.content %></p>
     <!--article_comment_pathヘルパーには親(micropost)と子(comment)を両方渡す-->
-    <p><%= link_to '削除',micropost_comment_path(@micropost,comment),
-                          method: :delete,data: {confirm: '削除してもよろしいですか？'} %></p>
+    <p><%= link_to micropost_comment_path(@micropost,comment),
+                          method: :delete,data: {confirm: '削除してもよろしいですか？'} do %>
+        <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+       <% end %>                  
+    </p>
+
 <% end %>
-<%= link_to 'Twitter', "https://twitter.com/share?url=#{request.url}", 
-                                title: 'Twitter', target: '_blank' %>
+    <hr>
+<!--引数の順番は親、子-->
+<%= form_for ([@micropost,@comment]) do |f| %>
+    <%= render 'shared/error_messages',object: f.object %>
+    <p>
+        <%= f.text_field :title,:placeholder => "タイトルを入力" %><br/>
+    </p>
+    <p>
+        <%= f.text_area :content,:placeholder => "コメントを入力" %><br/>
+    </p>
+    <p>
+       <%= f.submit "送信" %>
+    </p>
+<% end %>
+
+
 </div>
 
  
