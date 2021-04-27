@@ -1,5 +1,6 @@
 class Micropost < ApplicationRecord
   belongs_to :user
+  has_many :comments, dependent: :destroy
   default_scope -> { order(created_at: :desc) }
   validates :user_id, presence: true
   VALID_CONTENT_REGEX = /\A(https\:\/\/docs\.google\.com\/forms\/d\/e\/)+([\w+\-.]{56})+(\/viewform)+([\w+\-.?=]{1,20}*)\z/

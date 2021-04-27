@@ -15,6 +15,8 @@ class MicropostsController < ApplicationController
     
     def show
      @micropost = Micropost.find(params[:id])
+     #コメントフォームに必要なインスタンスを作成
+     @comment = Comment.new
     end
     
     def destroy
