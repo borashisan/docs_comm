@@ -106,9 +106,12 @@ p {
 /* header */
 
 header {
-  line-height: 0;
-}
+  height: 59px;
 
+}
+.navbar {
+  margin-bottom: 0px;
+}
 
 
 
@@ -118,10 +121,10 @@ header {
   margin-right: 10px;
   font-size: 2em;
   color: #000000;
+  padding-top: 9px;
   text-transform: uppercase;
   text-align : center ;
   letter-spacing: -1px;
-  padding-top: 28px;
   font-weight: bold;
   &:hover {
     color: 000000;
@@ -214,14 +217,7 @@ aside {
   }
 }
 
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
 
-.gravatar_edit {
-  margin-top: 15px;
-}
 
 /* forms */
 

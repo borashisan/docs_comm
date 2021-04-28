@@ -1,15 +1,18 @@
 <div class="container">
  <div class="row">
-  <aside class="col-md-8">
-    <section class="user_info">
-     <%= link_to  "https://twitter.com/share?url=#{request.url}", class: "SNS",
+  <div class = "SNS">
+   <%= link_to  "https://twitter.com/share?url=#{request.url}", 
                                 title: 'Twitter', target: '_blank' do %>
         <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
      <% end %> 
-     <%= link_to  "https://line.me/R/msg/text/?#{request.url}", class: "SNS",
+     <%= link_to  "https://line.me/R/msg/text/?#{request.url}", 
                                 title: 'Line', target: '_blank' do %>
-　　 Line
+     Line
      <% end %> 
+  </div> 
+  <aside class="col-md-8">
+    <section class="user_info">
+   
      
       <h1>
       <% if @user.image? %>
