@@ -1,10 +1,4 @@
-User.create!(name:  "Tomoya Nakabayashi",
-             email: "tomochuro731@gmail.com",
-             password:              "nakaba8739",
-             password_confirmation: "nakaba8739",
-             admin:true,
-             activated:true,
-             activated_at: Time.zone.now)
+
              
 User.create!(name:  "TestUser",
              email: "Test@gmail.com",
