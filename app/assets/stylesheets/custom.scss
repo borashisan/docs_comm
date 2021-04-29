@@ -221,9 +221,10 @@ aside {
 
 /* forms */
 
-.icon-submit{
+#icon-submit{
   text-align : left ;
   border-radius : 30%;   
+  position-top : 100px;
 }
 
 .btn-primary {
@@ -281,6 +282,10 @@ aside {
     }
      }
   }
+  
+  aside section {
+    padding: 15px 0; /* 10pxだとformのボタンが見切れる */
+}
 
 
 /* Users index */
@@ -329,11 +334,19 @@ aside {
 }
 
 /* microposts */
+.micropost_form{
+  text-align: center;
+  height: 150px;
+}
+.field{
+  height: 50px;  /* 投稿フォームの高さを設定する */
+  width: 500px;  /*投稿フォームの幅を設定する */
+}
 
 
 
 
-
+/* microposts */
 .microposts {
   width: 590px;
   list-style: none;
@@ -359,11 +372,7 @@ aside {
     display: block;
     margin-left: 60px;
   }
-  .gravatar {
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
-  }
+
 }
 
 
@@ -386,5 +395,10 @@ span.picture {
 }
 .line-it-button{
   float:right;
+}
+
+/* User */
+.UserImage{
+  margin:  0 auto;   /* 中央寄せ */
 }
 

@@ -1,13 +1,14 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
-  <div class="field">
-    <%= f.text_area :content, placeholder: "https://docs.google.com/forms/d/e/1FAIpQLS..." %>
+  <div>
+    <%= f.text_area :content, class: "field",  placeholder: "https://docs.google.com/forms/d/e/1FAIpQLS..." %>
   </div>
-  <div class = "icon-submit">
-  <%= f.button :type => "submit", class: "btn btn-primary" do %>
-  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-  <% end %>
+  <div>
+    <%= f.button :type => "submit", id: "icon-submit", class: "btn btn-primary" do %>
+    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+    <% end %>
   </div>
+
 <% end %>
 
  

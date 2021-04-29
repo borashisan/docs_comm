@@ -1,6 +1,7 @@
 <%= link_to current_user do %>
+
  <% if current_user.image? %>
-   <%= image_tag current_user.image.url, :size =>'150x150' %>
+   <%= image_tag current_user.image.url, :size =>'100x100' %>
  <% else %>
    <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
  <% end %>
