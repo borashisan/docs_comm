@@ -33,6 +33,16 @@
           <%= f.label "パスワード確認" %>
           <%= f.password_field :password_confirmation, class: 'form-control' %>
           </div>
+          
+          <%= f.label "性別" %><br />
+          <div class="sex-field">
+           <%= f.label "男性"  %>
+           <%= f.radio_button :sex, :man %>
+           <%= f.label "女性"  %>
+           <%= f.radio_button :sex, :woman %>
+           <%= f.label "無回答"  %>
+           <%= f.radio_button :sex, :nonsex %>
+          </div>
     
           <%= f.submit "更新する", class: "btn btn-primary" %>
         <% end %>

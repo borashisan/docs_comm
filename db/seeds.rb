@@ -1,5 +1,3 @@
-
-             
 User.create!(name:  "TestUser",
              email: "Test@gmail.com",
              password:              "testuser",

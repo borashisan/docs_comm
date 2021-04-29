@@ -17,6 +17,17 @@
        <%= f.password_field :password,:placeholder => "パスワード", class: 'form-control' %>
 
        <%= f.password_field :password_confirmation,:placeholder => "パスワード確認", class: 'form-control' %>
+       
+        <%= f.label "性別" %><br />
+        <div class="sex-field">
+         <%= f.label "男性"  %>
+         <%= f.radio_button :sex, :man %>
+         <%= f.label "女性"  %>
+         <%= f.radio_button :sex, :woman %>
+         <%= f.label "無回答"  %>
+         <%= f.radio_button :sex, :nonsex %>
+        </div>
+     </div>
      <br>
      <div id = "signup">
        <%= f.submit "登録する", class: "btn btn-primary" %>
@@ -26,9 +37,10 @@
      <br>
      </div>
     </div>
-  </div>
+ 
 
   <div class="center jumbotron">
      <p>アカウントをお持ちですか？ <br><%= link_to "ログインする", root_path %></p>
  </div>
-</div>
+ </div>
+ 
