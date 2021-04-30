@@ -3,6 +3,10 @@
   <div>
     <%= f.text_area :content, class: "field",  placeholder: "https://docs.google.com/forms/d/e/1FAIpQLS..." %>
   </div>
+  <div class = "micropost_sex">
+   <%= f.select :micropost_sex,  [["男性", "man"], ["女性", "woman"],["わからない","nonsex"]], 
+                                  include_blank: "選択して下さい"%>
+  </div>
   <div>
     <%= f.button :type => "submit", id: "icon-submit", class: "btn btn-primary" do %>
     <i class="fa fa-paper-plane-o" aria-hidden="true"></i>

@@ -222,7 +222,7 @@ aside {
 /* forms */
 
 #icon-submit{
-  text-align : left ;
+  float: left;
   border-radius : 30%;   
   position-top : 100px;
 }
@@ -275,7 +275,7 @@ input {
 }
 
 /* User show */
-aside {
+aside { 
   section {
     span {
       line-height: initial;
@@ -336,7 +336,9 @@ aside {
 /* microposts */
 .micropost_form{
   text-align: center;
+  margin:  0 auto;   /* 中央寄せ */
   height: 150px;
+  width: 500px;
 }
 .field{
   height: 50px;  /* 投稿フォームの高さを設定する */
@@ -381,7 +383,7 @@ aside {
 }
 
 
-aside {
+aside { 
   textarea {
     height: 100px;
     margin-bottom: 5px;
@@ -400,6 +402,11 @@ span.picture {
 }
 .line-it-button{
   float:right;
+}
+
+.micropost_sex{
+  width: 50px; /*幅を50px*/
+  float: right;
 }
 
 /* User */

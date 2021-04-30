@@ -1,11 +1,29 @@
-User.create!(name:  "TestUser",
-             email: "Test@gmail.com",
+User.create!(name:  "TestUser1",
+             email: "Test1@gmail.com",
              password:              "testuser",
              password_confirmation: "testuser",
              admin:true,
              activated:true,
              activated_at: Time.zone.now,
              sex: 0)
+             
+User.create!(name:  "TestUser2",
+             email: "Test2@gmail.com",
+             password:              "testuser",
+             password_confirmation: "testuser",
+             admin:true,
+             activated:true,
+             activated_at: Time.zone.now,
+             sex: 1)
+             
+User.create!(name:  "TestUser3",
+             email: "Test3@gmail.com",
+             password:              "testuser",
+             password_confirmation: "testuser",
+             admin:true,
+             activated:true,
+             activated_at: Time.zone.now,
+             sex: 2)
 
              
 10.times do |n|
