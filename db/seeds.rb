@@ -1,4 +1,4 @@
-User.create!(name:  "TestUser1",
+User.create!(name:  "男",
              email: "Test1@gmail.com",
              password:              "testuser",
              password_confirmation: "testuser",
@@ -7,7 +7,7 @@ User.create!(name:  "TestUser1",
              activated_at: Time.zone.now,
              sex: 0)
              
-User.create!(name:  "TestUser2",
+User.create!(name:  "女",
              email: "Test2@gmail.com",
              password:              "testuser",
              password_confirmation: "testuser",
@@ -16,7 +16,7 @@ User.create!(name:  "TestUser2",
              activated_at: Time.zone.now,
              sex: 1)
              
-User.create!(name:  "TestUser3",
+User.create!(name:  "分からない",
              email: "Test3@gmail.com",
              password:              "testuser",
              password_confirmation: "testuser",
@@ -24,6 +24,15 @@ User.create!(name:  "TestUser3",
              activated:true,
              activated_at: Time.zone.now,
              sex: 2)
+            
+User.create!(name:  "無回答",
+             email: "Test4@gmail.com",
+             password:              "testuser",
+             password_confirmation: "testuser",
+             admin:true,
+             activated:true,
+             activated_at: Time.zone.now,
+             )
 
              
 10.times do |n|
