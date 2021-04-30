@@ -4,8 +4,8 @@
     <%= f.text_area :content, class: "field",  placeholder: "https://docs.google.com/forms/d/e/1FAIpQLS..." %>
   </div>
   <div class = "micropost_sex">
-   <%= f.select :micropost_sex,  [["男性", "man"], ["女性", "woman"],["わからない","nonsex"]], 
-                                  include_blank: "選択して下さい"%>
+   <%= f.select :micropost_sex,  [["男性に向けて送信", "man"], ["女性に向けて送信", "woman"],["どちらでも無い人に送信","nonsex"]], 
+                                  include_blank: "全員に送信"%>
   </div>
   <div>
     <%= f.button :type => "submit", id: "icon-submit", class: "btn btn-primary" do %>
