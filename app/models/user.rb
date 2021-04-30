@@ -75,8 +75,10 @@ class User < ApplicationRecord
  end
   
  def feed
-   Micropost
+  Micropost
  end
+ 
+ 
 
 
 private

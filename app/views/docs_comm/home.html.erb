@@ -43,7 +43,25 @@
       <%= form_for(:session, url: log_in_path) do |f| %>
         <%= f.hidden_field :email, value: "Test1@gmail.com" %>
         <%= f.hidden_field :password, value: "testuser" %>
-        <%= f.submit 'テストログイン', class:  "btn btn-primary" %>
+        <%= f.submit 'テストログイン男', class:  "btn btn-primary" %>
+      <% end %>
+      
+      <%= form_for(:session, url: log_in_path) do |f| %>
+        <%= f.hidden_field :email, value: "Test2@gmail.com" %>
+        <%= f.hidden_field :password, value: "testuser" %>
+        <%= f.submit 'テストログイン女', class:  "btn btn-primary" %>
+      <% end %>
+      
+      <%= form_for(:session, url: log_in_path) do |f| %>
+        <%= f.hidden_field :email, value: "Test3@gmail.com" %>
+        <%= f.hidden_field :password, value: "testuser" %>
+        <%= f.submit 'テストログイン分からない', class:  "btn btn-primary" %>
+      <% end %>
+      
+      <%= form_for(:session, url: log_in_path) do |f| %>
+        <%= f.hidden_field :email, value: "Test4@gmail.com" %>
+        <%= f.hidden_field :password, value: "testuser" %>
+        <%= f.submit 'テストログイン無回答', class:  "btn btn-primary" %>
       <% end %>
     </div>
 
