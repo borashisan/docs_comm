@@ -40,8 +40,10 @@
            <%= f.radio_button :sex, :man %>
            <%= f.label "女性"  %>
            <%= f.radio_button :sex, :woman %>
-           <%= f.label "無回答"  %>
+           <%= f.label "分からない"  %>
            <%= f.radio_button :sex, :nonsex %>
+           <%= f.label "答えない"  %>
+           <%= f.radio_button :sex, [] %>
           </div>
     
           <%= f.submit "更新する", class: "btn btn-primary" %>
