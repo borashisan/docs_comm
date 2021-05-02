@@ -1,4 +1,14 @@
 <%= link_to current_user do %>
+  <div class = "SNS">
+   <%= link_to  "https://twitter.com/share?url=#{root_url}users/#{current_user.id}", 
+                                title: 'Twitter', target: '_blank' do %>
+        <i class="fab fa-twitter fa-2x"></i>
+     <% end %> 
+     <%= link_to  "https://line.me/R/msg/text/?#{root_url}users/#{current_user.id}", 
+                                title: 'Line', target: '_blank' do %>
+        <i class="fab fa-line fa-2x"></i>
+     <% end %> 
+  </div> 
 
  <% if current_user.image? %>
    <%= image_tag current_user.image.url, :size =>'100x100' %>
