@@ -1,4 +1,4 @@
-User.create!(name:  "男",
+User.create!(name:  "男性",
              email: "Test1@gmail.com",
              password:              "testuser",
              password_confirmation: "testuser",
@@ -7,7 +7,7 @@ User.create!(name:  "男",
              activated_at: Time.zone.now,
              sex: 0)
              
-User.create!(name:  "女",
+User.create!(name:  "女性",
              email: "Test2@gmail.com",
              password:              "testuser",
              password_confirmation: "testuser",
@@ -48,12 +48,21 @@ User.create!(name:  "性別無回答",
 end
 
 users = User.order(:created_at).take(6)
-4.times do
-  content = ["https://docs.google.com/forms/d/e/1FAIpQLSe2olFhlP-KxqH66GZAja28FVuR5lwTb7Do5_iIDndd69vmPw/viewform?usp=sf_link",
-  "https://docs.google.com/forms/d/e/1FAIpQLSdCZQLmWr8yofWbcKQRvY790ekDGNSM9BbpqKr-yYquMfjvDg/viewform?usp=sf_link",
-  "https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djjcA3F_2P1ZA/viewform?usp=sf_link",
-  "https://docs.google.com/forms/d/e/1FAIpQLScJI8mjVm_xKxvl72xoJdeYiJZgu6JCol-uSD1FaAahodD-Bw/viewform?usp=sf_link"]
+
+
+2.times do
+  content = "https://docs.google.com/forms/d/e/1FAIpQLSe2olFhlP-KxqH66GZAja28FVuR5lwTb7Do5_iIDndd69vmPw/viewform?usp=sf_link"
   
   users.each { |user| user.microposts.create!(content: content) }
 end
+
+Micropost.create!(content: "https://docs.google.com/forms/d/e/1FAIpQLSdCZQLmWr8yofWbcKQRvY790ekDGNSM9BbpqKr-yYquMfjvDg/viewform?usp=sf_link",
+                  user_id: 1,
+                  micropost_sex: 0)
+Micropost.create!(content: "https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djjcA3F_2P1ZA/viewform?usp=sf_link",
+                  user_id: 2,
+                  micropost_sex: 1)
+Micropost.create!(content: "https://docs.google.com/forms/d/e/1FAIpQLScJI8mjVm_xKxvl72xoJdeYiJZgu6JCol-uSD1FaAahodD-Bw/viewform?usp=sf_link",
+                  user_id: 3,
+                  micropost_sex: 2)
 
