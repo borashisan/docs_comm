@@ -48,8 +48,12 @@ User.create!(name:  "性別無回答",
 end
 
 users = User.order(:created_at).take(6)
-5.times do
-  content = "https://docs.google.com/forms/d/e/1FAIpQLSe2olFhlP-KxqH66GZAja28FVuR5lwTb7Do5_iIDndd69vmPw/viewform?usp=sf_link"
+4.times do
+  content = ["https://docs.google.com/forms/d/e/1FAIpQLSe2olFhlP-KxqH66GZAja28FVuR5lwTb7Do5_iIDndd69vmPw/viewform?usp=sf_link",
+  "https://docs.google.com/forms/d/e/1FAIpQLSdCZQLmWr8yofWbcKQRvY790ekDGNSM9BbpqKr-yYquMfjvDg/viewform?usp=sf_link",
+  "https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djjcA3F_2P1ZA/viewform?usp=sf_link",
+  "https://docs.google.com/forms/d/e/1FAIpQLScJI8mjVm_xKxvl72xoJdeYiJZgu6JCol-uSD1FaAahodD-Bw/viewform?usp=sf_link"]
+  
   users.each { |user| user.microposts.create!(content: content) }
 end
 

@@ -35,16 +35,9 @@
           </div>
           
           <%= f.label "性別" %><br />
-          <div class="sex-field">
-           <%= f.label "男性"  %>
-           <%= f.radio_button :sex, :man %>
-           <%= f.label "女性"  %>
-           <%= f.radio_button :sex, :woman %>
-           <%= f.label "分からない"  %>
-           <%= f.radio_button :sex, :nonsex %>
-           <%= f.label "答えない"  %>
-           <%= f.radio_button :sex, [] %>
-          </div>
+          
+          <%= f.select :sex,  [["男性", "man"], ["女性", "woman"],["分からない","nonsex"]], 
+                                  include_blank: "性別を選択できます"%>
     
           <%= f.submit "更新する", class: "btn btn-primary" %>
         <% end %>
