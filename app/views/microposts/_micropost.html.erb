@@ -1,20 +1,10 @@
 <li id="micropost-<%= micropost.id %>">
- <div class="SNS"> 
-     <%= link_to  "https://twitter.com/share?url=#{request.url}", 
-                                title: 'Twitter', target: '_blank' do %>
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-     <% end %> 
-     <%= link_to  "https://line.me/R/msg/text/?#{request.url}", 
-                                title: 'Line', target: '_blank' do %>
-     Line
-     <% end %> 
- </div>
  <% if controller_path == 'microposts' %>
   <%= link_to micropost.user do %> 
    <% if micropost.user.image? %>
     <%= image_tag micropost.user.image.url, :size =>'50x50' %>
    <% else %>
-    <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+    <i class="fas fa-user-circle fa-2x"></i>
    <% end %>
   <span class="user"><%= micropost.user.name %></span>
   <% end %>
@@ -23,7 +13,7 @@
    <% if micropost.user.image? %>
     <%= image_tag micropost.user.image.url, :size =>'50x50' %>
    <% else %>
-    <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+    <i class="fas fa-user-circle fa-2x"></i>
    <% end %>
   <span class="user"><%= micropost.user.name %></span>
   <% end %>
@@ -35,10 +25,20 @@
     <% if current_user?(micropost.user) %>
       <%= link_to micropost, method: :delete,
                                        data: { confirm: "削除してもよろしいですか" } do %>
-      <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+      <i class="fas fa-trash-alt fa-2x"></i>
       <% end %>
     <% end %>
   </span>
+  <div class="SNS"> 
+     <%= link_to  "https://twitter.com/share?url=#{root_url}microposts/#{micropost.id}", 
+                                title: 'Twitter', target: '_blank' do %>
+        <i class="fab fa-twitter fa-2x"></i>
+     <% end %> 
+     <%= link_to  "https://line.me/R/msg/text/?#{root_url}microposts/#{micropost.id}", 
+                                title: 'Line', target: '_blank' do %>
+        <i class="fab fa-line fa-2x"></i>
+     <% end %> 
+  </div>
  </li>
  
 

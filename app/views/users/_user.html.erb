@@ -3,14 +3,14 @@
   <% if user.image? %>
     <%= image_tag user.image.url, :size =>'50x50' %>
   <% else %>
-    <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
+    <i class="fas fa-user-circle fa-3x"></i>
   <% end %>
   <%= user.name %>
  <% end %>
   <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to user, method: :delete,
                                   data: { confirm: "このユーザーを削除してもよろしいですか" } do %>
-        <i class="fa fa-trash-o fa-la" aria-hidden="true"></i>
+        <i class="fas fa-trash-alt fa-la"></i>
       <% end %>
   <% end %>
 </li>
