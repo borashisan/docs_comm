@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only:[:index,:edit,:update,:show,:destroy] #認可
+  before_action :logged_in_user, only:[:index,:edit,:update,:destroy] #認可
   before_action :correct_user,   only:[:edit, :update]
   before_action :admin_user,     only: :destroy
   

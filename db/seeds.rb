@@ -25,7 +25,7 @@ User.create!(name:  "分からない",
              activated_at: Time.zone.now,
              sex: 2)
             
-User.create!(name:  "無回答",
+User.create!(name:  "性別無回答",
              email: "Test4@gmail.com",
              password:              "testuser",
              password_confirmation: "testuser",

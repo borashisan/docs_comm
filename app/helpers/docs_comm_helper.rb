@@ -56,6 +56,8 @@ module DocsCommHelper
    end
  end
  
+ #ログインしていないユーザーでない場合trueを返す
+ 
  #ヘッダーがいらないページ
  def non_header?
   if controller_path == 'docs_comm' && current_user.nil?

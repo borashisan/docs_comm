@@ -12,9 +12,6 @@
   </head>
   <body>
     
-    <% unless non_header? %>
-    
-    <% end %>
     
     <% flash.each do |message_type, message|%>
      <div class = "alert alert-<%= message_type%>"><%=message %></div>
