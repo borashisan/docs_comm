@@ -15,3 +15,19 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+/*画像のスライド*/
+ $(function() {
+    $('.a').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    });
+    $('.slick-dots li').on('mouseover', function() {
+    $('.a').slick('goTo', $(this).index());
+  });
+});
+
+
+ 
+
