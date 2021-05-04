@@ -108,9 +108,12 @@ p {
   
 }
 
-.image{
-  width :456px;
+.how img {
+  height: 100%;
+  width: 100%;
 }
+
+
 
 /* header */
 
@@ -349,7 +352,7 @@ aside {
   width: 500px;
 }
 .field{
-  height: 50px;  /* 投稿フォームの高さを設定する */
+  height: 65px;  /* 投稿フォームの高さを設定する */
   width: 500px;  /*投稿フォームの幅を設定する */
 }
 

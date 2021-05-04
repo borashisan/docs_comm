@@ -13,6 +13,9 @@ class DocsCommController < ApplicationController
        end
     end
   end
+  
+  def how
+  end
     
   
   def create

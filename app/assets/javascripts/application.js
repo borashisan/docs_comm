@@ -28,6 +28,17 @@
   });
 });
 
+  $(function() {
+    $('.how').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+    });
+    $('.slick-dots li').on('mouseover', function() {
+    $('.how').slick('goTo', $(this).index());
+  });
+});
+
 
  
 
