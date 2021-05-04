@@ -32,7 +32,7 @@
     $('.how').slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 5000,
     });
     $('.slick-dots li').on('mouseover', function() {
     $('.how').slick('goTo', $(this).index());
