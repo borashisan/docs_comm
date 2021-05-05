@@ -16,9 +16,10 @@ https://docs.google.com/forms/d/e/1FAIpQLSdCZQLmWr8yofWbcKQRvY790ekDGNSM9BbpqKr-
 https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djjcA3F_2P1ZA/viewform?usp=sf_link
 
 ## 使い方
-
-(/image/sample.png "This is a sample image.")
 まずはホーム画面から"登録する"を押していただいてユーザー登録していただきます。
+
+<img width="300" alt="スクリーンショット 2021-05-05 20 31 28" src="https://user-images.githubusercontent.com/75083795/117142093-4a928180-adea-11eb-9156-ceaa4da025f2.png">
+
 
 今回は採用担当者様に向けてテストログイン機能を設けております。
 また、性別限定機能を確かめていただくために性別ごとにログインできるようになっておりますのでお試しください。
