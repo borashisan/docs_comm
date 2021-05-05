@@ -39,10 +39,10 @@ https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djj
 利用者さま本人のgoogleアカウントの送信欄から取得したURLからでしか投稿できないようになっています。また短縮URLもご利用いただけません。
 
 投稿方法はフォーム右下にございます、使い方からも詳しく見ることができます。
-<>
+
 ホーム画面をスクロールしていただきますと他のユーザー様のアンケートをご覧になることができます。
 
-<>
+
 気になる投稿がございましたらユーザー名を押していただくと、そのアンケートの詳細ページに飛ぶことができます。
 <img width="400" alt="スクリーンショット 2021-05-05 20 32 57" src="https://user-images.githubusercontent.com/75083795/117142683-efad5a00-adea-11eb-9901-eda8e6b7f550.png">
 
@@ -51,8 +51,10 @@ https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djj
 
 <img width="400" alt="スクリーンショット 2021-05-05 20 33 14" src="https://user-images.githubusercontent.com/75083795/117142695-f2a84a80-adea-11eb-9846-ed669b5b298d.png">
 
-<>
+
 詳細ページのユーザー名を押していただくと今度はユーザーの詳細画面に飛ぶことができます。
+
+<img width="400" alt="スクリーンショット 2021-05-05 21 48 19" src="https://user-images.githubusercontent.com/75083795/117143299-a3aee500-adeb-11eb-9471-b730ec891fd5.png">
 
 ここではユーザーが投稿したフォームの一覧をご覧になることができます。またこの画面でもユーザー本人様向けの機能として自身のユーザーページをSNSに共有できます。
 
