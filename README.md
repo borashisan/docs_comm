@@ -62,7 +62,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djj
 
 ヘッダー右上のバーから飛べる設定メニューでは、アイコン画像、ユーザー名、自己紹介、メールアドレス、パスワード、性別を再設定できます。
 
-<img width="605" alt="スクリーンショット 2021-05-05 21 54 27" src="https://user-images.githubusercontent.com/75083795/117144089-7c0c4c80-adec-11eb-87ba-93e5c7c5ea6b.png">
+<img width="400" alt="スクリーンショット 2021-05-05 21 54 27" src="https://user-images.githubusercontent.com/75083795/117144089-7c0c4c80-adec-11eb-87ba-93e5c7c5ea6b.png">
 
 
 
