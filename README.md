@@ -150,7 +150,7 @@ Fontawsomeを用いたアイコン表示機能
 slickを用いた画像スライド機能
 
 ## ER図
-<img width="426" alt="スクリーンショット 2021-05-05 21 57 09" src="https://user-images.githubusercontent.com/75083795/117144468-eae9a580-adec-11eb-91ab-a6a72a150057.png">
+<img width="417" alt="スクリーンショット 2021-05-05 22 00 38" src="https://user-images.githubusercontent.com/75083795/117144824-5c295880-aded-11eb-8158-cf5cbea6a992.png">
 
 
 
