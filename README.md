@@ -44,10 +44,13 @@ https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djj
 
 <>
 気になる投稿がございましたらユーザー名を押していただくと、そのアンケートの詳細ページに飛ぶことができます。
-<>
-詳細ページからはコメントを投稿することができます。
+<img width="400" alt="スクリーンショット 2021-05-05 20 32 57" src="https://user-images.githubusercontent.com/75083795/117142683-efad5a00-adea-11eb-9901-eda8e6b7f550.png">
 
+詳細ページからはコメントを投稿することができます。
 またアンケート主本人様向けの機能としてマイクロポストにはSNS共有機能がございます。
+
+<img width="400" alt="スクリーンショット 2021-05-05 20 33 14" src="https://user-images.githubusercontent.com/75083795/117142695-f2a84a80-adea-11eb-9846-ed669b5b298d.png">
+
 <>
 詳細ページのユーザー名を押していただくと今度はユーザーの詳細画面に飛ぶことができます。
 
