@@ -27,6 +27,8 @@ https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djj
 
 ログインしていただきますと、投稿フォームのあるホーム画面へ飛びます。
 
+<img width="600" alt="スクリーンショット 2021-05-05 21 52 14" src="https://user-images.githubusercontent.com/75083795/117143860-410a1900-adec-11eb-953d-b8037ffedd96.png">
+
 ヘッダー右上のバーからはユーザー一覧ページ、ログインユーザーページ、設定ページ、ログアウトに飛ぶことができます。
 
 ヘッダーのバー横のプラスマークと左のロゴアイコンからはホーム画面に飛びます。
@@ -58,8 +60,9 @@ https://docs.google.com/forms/d/e/1FAIpQLSc7DoLXS6bNUb6zbboZt4_fBS5-LZfeNlRN9djj
 
 ここではユーザーが投稿したフォームの一覧をご覧になることができます。またこの画面でもユーザー本人様向けの機能として自身のユーザーページをSNSに共有できます。
 
-<>
 ヘッダー右上のバーから飛べる設定メニューでは、アイコン画像、ユーザー名、自己紹介、メールアドレス、パスワード、性別を再設定できます。
+
+<img width="605" alt="スクリーンショット 2021-05-05 21 54 27" src="https://user-images.githubusercontent.com/75083795/117144089-7c0c4c80-adec-11eb-87ba-93e5c7c5ea6b.png">
 
 
 
@@ -147,6 +150,7 @@ Fontawsomeを用いたアイコン表示機能
 slickを用いた画像スライド機能
 
 ## ER図
+<img width="426" alt="スクリーンショット 2021-05-05 21 57 09" src="https://user-images.githubusercontent.com/75083795/117144468-eae9a580-adec-11eb-91ab-a6a72a150057.png">
 
 
 
