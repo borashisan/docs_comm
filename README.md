@@ -1,6 +1,7 @@
 # DOCS_COMM
 
 DOCS_COMMとはGoogleフォームのアンケートを不特定多数の人間に共有する事を目的としたWebサイトです。
+URL: https://intense-hollows-49590.herokuapp.com/
 
 <img width="500" alt="スクリーンショット 2021-05-04 14 24 42" src="https://user-images.githubusercontent.com/75083795/117141592-ae687a80-ade9-11eb-82ff-a566352fdb98.png">
 
